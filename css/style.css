@@ -203,3 +203,55 @@ img {
 .footer a {
     padding: 5px;
 }
+
+/* Tablet and under*/
+@media(max-width: 768px) {
+    .grid, 
+    .Showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .Showcase {
+        height: auto;
+    }
+
+    .Showcase-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .Showcase-form{
+        justify-self: center;
+        margin: auto;
+    }
+
+    .cli .grid > *:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .cli .card {
+        text-align: center;
+    }
+}
+
+/* Mobile*/
+@media(max-width: 500px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0,0,0,0.1);
+    }
+
+}
